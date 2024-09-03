@@ -70,6 +70,7 @@ public class TecnicosServices
             .Where(criterio)
             .ToList();
     }
+
     public async Task<bool> ExisteNombre(string nombre, int? idTecnico = null)
     {
         if (idTecnico.HasValue)
